@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>柱状图</title>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="../echarts.js"></script>
+    <script src="./myEchart-bar.js"></script>
+</head>
+<body>
+    <div id="bar" style="width: 800px;height: 500px"></div>
+    <script>
+
+
+
+
+        $('#bar').myBar({
+            type: 'bar',
+            title:{
+                show: true,
+                title: '测试柱状图',
+                linek: 'www.baidu.com'
+            }
+        })
+
+
+
+    </script>
+</body>
+</html>
