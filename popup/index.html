@@ -9,22 +9,32 @@
 </head>
 <body>
 
+    <button id="open">打开弹窗</button>
+    <button id="close">关闭弹窗</button>
+    <button id="add">给弹窗增加内容</button>
 
-<!--    <div class="my-popup-bg-box">
-        <div class="my-popup-box">
-            <div class="my-popup-title">
-                <div class="title">提示</div>
-                <div class="close">×</div>
-            </div>
-            <div class="my-popup-content"></div>
-            <div class="my-popup-bottom">
-                <button class="query">确定</button>
-                <button class="cancer">取消</button>
-            </div>
-        </div>
-    </div>-->
     <script>
-        $('body').myPopup({});
+
+        // var popup = null;
+        $('button#open').on('click', function () {
+            var popup = $('body').myPopup({
+                title: '信息',
+                popupOutWidth: '600px',
+                mainContent:'<h1>Hello World</h1>',
+                queryCallback: function () {
+                    popup.addMainDom('<h1>123</h1>');
+                    // popup.closePopup();
+                },
+                cancerCallback: function () {
+                    popup.closePopup();
+                }
+            });
+        });
+
+
+
+
+
     </script>
 </body>
 </html>

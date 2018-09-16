@@ -6,8 +6,8 @@ html,body{
 }
 .my-popup-bg-box{
     width: 100%;
-    height: 100%;
-    position: fixed;
+    min-height: 100%;
+    position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -15,10 +15,12 @@ html,body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow-y: auto;
 }
 .my-popup-box{
+    width: 800px;
+    margin: 50px 0px;
     background: white;
-    width: 500px;
 }
 .my-popup-box .my-popup-title{
     display: flex;
