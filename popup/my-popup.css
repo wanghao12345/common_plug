@@ -12,6 +12,8 @@ html,body{
     left: 0px;
     right: 0px;
     background: rgba(0, 0, 0, 0.5);
+    display:-webkit-flex;
+    display: -moz-flex;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,13 +22,16 @@ html,body{
 .my-popup-box{
     width: 800px;
     margin: 50px 0px;
-    background: white;
 }
 .my-popup-box .my-popup-title{
+    display:-webkit-flex;
+    display: -moz-flex;
     display: flex;
     width: 100%;
     height: 50px;
     background-color: #F8F8F8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .my-popup-box .my-popup-title div{
@@ -51,14 +56,21 @@ html,body{
 .my-popup-box .my-popup-content{
     width: 100%;
     min-height: 100px;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .my-popup-box .my-popup-bottom{
     width: 100%;
     height: 50px;
+    display:-webkit-flex;
+    display: -moz-flex;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F8F8F8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .my-popup-box .my-popup-bottom button{
     width: 80px;
